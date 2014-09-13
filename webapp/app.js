@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -9,6 +8,7 @@ var express = require('express')
 
 var request = require('request');
 var aws = require('aws-lib');
+var keys = require('./private/keys.js');
 
 var app = module.exports = express.createServer();
 
