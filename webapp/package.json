@@ -7,6 +7,8 @@
   }
   , "dependencies": {
       "socket.io": "latest",
+      "request": "latest",
+      "aws-lib": "latest",
       "express": "2.5.8"
     , "jade": ">= 0.0.1"
   }

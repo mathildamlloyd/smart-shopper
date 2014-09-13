@@ -7,6 +7,9 @@ var express = require('express')
   , routes = require('./routes')
   , search = require('./routes/search');
 
+var request = require('request');
+var aws = require('aws-lib');
+
 var app = module.exports = express.createServer();
 
 // Configuration

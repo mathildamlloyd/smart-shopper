@@ -12,3 +12,6 @@ exports.postSearch = function(req, res){
   var lookup = query['search-params'];
   res.render('searchResult', { lookup: lookup });
 };
+
+exports.searchAmazon = function(upc) {
+};
