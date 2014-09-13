@@ -8,7 +8,7 @@ exports.search = function(req, res){
 };
 
 exports.postSearch = function(req, res){
-  var query = req.query;
+  var query = req.body;
   var lookup = query['search-params'];
   res.render('searchResult', { lookup: lookup });
 };
