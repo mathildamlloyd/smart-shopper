@@ -8,6 +8,7 @@ var express = require('express')
   , search = require('./routes/search');
 
 var request = require('request');
+var aws = require('aws-lib');
 
 var app = module.exports = express.createServer();
 
