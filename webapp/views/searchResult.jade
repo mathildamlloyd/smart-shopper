@@ -1,1 +1,21 @@
 p Your lookup value is #{lookup}
+
+p Amazon Results:
+p
+  for item in items
+    p
+    if (item.ItemAttributes && item.ItemAttributes.ListPrice)
+      tr
+        td
+          if (item.ImageSets.ImageSet.MediumImage)
+            img(src="#{item.ImageSets.ImageSet.MediumImage.URL}")
+          else if (item.ImageSets.ImageSet.SmallImage)
+            img(src="#{item.ImageSets.ImageSet.SmallImage.URL}")
+          else if (item.ImageSets.ImageSet.TinyImage)
+            img(src="#{item.ImageSets.ImageSet.TinyImage.URL}")
+        td
+          div.asin ASIN: #{item.ASIN}
+        td
+          div.price Price: #{item.ItemAttributes.ListPrice.FormattedPrice}
+        td
+          div.url URL: #{ item.DetailPageURL }
